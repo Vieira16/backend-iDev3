@@ -1,4 +1,4 @@
-const express = require("./user");
+const express = require("express");
 const userService = require('./userService');
 
 const app = express(); // nome qualquer para express
@@ -29,4 +29,3 @@ app.listen(port,() =>{
 
     }
 )
-

@@ -5,11 +5,12 @@ class User{
         this.email = email;
     }
 }
-class Admin extends User{
-    constructor(id,nome,email,nivelAcesso){
-        super(id,nome,email)
-        this.nivelAcesso = nivelAcesso
-    }
-}
 
-module.export = User //Exporta a classe User
+// class Admin extends User{
+//     constructor(id,nome,email,nivelAcesso){
+//         super(id,nome,email)
+//         this.nivelAcesso = nivelAcesso
+//     }
+// }
+
+module.exports = User //Exporta a classe User

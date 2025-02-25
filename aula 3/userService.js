@@ -34,7 +34,7 @@ class userService{
 
     saveUsers(){
         try{
-        fs.writeFileSync(this.filePath, json.stringify(this.users));
+        fs.writeFileSync(this.filePath, JSON.stringify(this.users));
 
         }catch(erro){
             console.log('Erro ao salvar arquivo', erro)

@@ -3,9 +3,14 @@ class User{
         this.id = id; // id do usuario
         this.nome = nome; // nome do usuario
         this.email = email; // email do usuario
-
     }
-
 }
 
-module.exports = User; // exportar o modulo
+class Admin extends User{
+     constructor(id,nome,email,nivelAcesso){
+         super(id,nome,email)
+         this.nivelAcesso = nivelAcesso
+     }
+ }
+
+ module.exports = User; // exportar o modulo

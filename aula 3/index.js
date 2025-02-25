@@ -2,12 +2,12 @@ const express = require("express");
 const userService = require('./userService');
 
 const app = express(); // nome qualquer para express
-app.use(express.json); // vou habilitar json no express
+app.use(express.json()); // vou habilitar json no express
 
 app.post("/users", (req, res) =>{
     const {nome, email} = req.body;
     if(!nome || !email){
-        return res.status(400).json({error: "Nome e Email são Obrigatórios"})
+        return res.status(400).json({error: "NoME e Email são Obrigatórios"})
     }
 
     const user = userService.addUser(nome, email);
